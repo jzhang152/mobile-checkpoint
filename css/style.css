@@ -1,0 +1,78 @@
+
+body{
+    margin: 1%;
+    padding: 5px;
+    background-image: url("../images/background.jpg");
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.skip{
+    color: black;
+}
+
+ul {
+    font-size: large;
+    font-style: initial;
+    color: bisque;
+}
+
+h1{
+    font-size: large;
+}
+
+p{
+    font-size: medium;
+    color:dodgerblue;
+}
+
+img{
+    border: 10px;
+    padding: 15px;
+    margin: 5px;
+    border-width: 30px;
+    display: grid;
+}
+
+div.wandering_earth, .sheep, .kong_fu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.avengers, .interstellar, .shawshank {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+#collection {
+    animation-name: myname;
+    animation-duration: 3s;
+}
+
+@keyframes myname {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1000px;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #collection {
+      animation: none;
+    }
+  }
+
+form {
+    color: dodgerblue;
+}
+
+a:hover{
+    color: lightskyblue;
+}
+
+.navigation:hover{
+    color: lightblue;
+}
